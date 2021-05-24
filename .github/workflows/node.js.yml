@@ -32,7 +32,7 @@ jobs:
     - run: npm test
       - uses: actions/upload-artifact@master
         with:
-          name: webpack artifacts
+    needs: build
           path: public/
 name: Node CI
 
